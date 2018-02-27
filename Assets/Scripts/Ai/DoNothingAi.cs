@@ -11,6 +11,6 @@ public class DoNothingAi : AiBehavior {
 
 	public override void Execute ()
 	{
-		Debug.Log ("Doing Nothing");
+		//Debug.Log ("Doing Nothing");
 	}
 }

@@ -45,7 +45,7 @@ public class AiController : MonoBehaviour {
 			}
 		}
 
-		Debug.Log (aiLog);
+		//Debug.Log (aiLog);
 		bestAi.Execute ();
 		waited = 0;
 	}

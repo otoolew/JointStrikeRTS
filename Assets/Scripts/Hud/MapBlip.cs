@@ -11,7 +11,7 @@ public class MapBlip : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		blip = GameObject.Instantiate (Map.Current.BlipPrefab);
-		blip.transform.parent = Map.Current.transform;
+		blip.transform.SetParent(Map.Current.transform);
 		var color = GetComponent<Player> ().Info.AccentColor;
 		blip.GetComponent<Image> ().color = color;
 	}

@@ -29,8 +29,8 @@ public class RightClickNavigation : Interaction {
 	public void SendToTarget()
 	{
 		agent.SetDestination (target);
-		agent.Resume ();
-		isActive = true;
+        agent.isStopped = false;
+        isActive = true;
 	}
 
 	// Use this for initialization
@@ -49,7 +49,7 @@ public class RightClickNavigation : Interaction {
 		}
 
 		if (isActive && Vector3.Distance (target, transform.position) < RelaxDistance) {
-			agent.Stop ();
+            agent.isStopped = true;
 			isActive = false;
 		}
 	}
