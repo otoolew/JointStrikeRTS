@@ -18,7 +18,7 @@ public class AiController : MonoBehaviour {
 		foreach (var ai in GetComponents<AiBehavior>()) {
 			Ais.Add (ai);
 		}
-		foreach (var p in RtsManager.Current.Players) {
+		foreach (var p in GameManager.Current.Players) {
 			if (p.Name == PlayerName) player = p;
 		}
 		gameObject.AddComponent<AiSupport> ().Player = player;

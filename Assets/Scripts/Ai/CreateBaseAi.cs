@@ -44,7 +44,7 @@ public class CreateBaseAi : AiBehavior {
 
 				go.transform.position = pos;
 
-				if (RtsManager.Current.IsGameObjectSafeToPlace (go)) {
+				if (GameManager.Current.IsGameObjectSafeToPlace (go)) {
 					support.Player.Credits -= Cost;
 					return;
 				}

@@ -27,7 +27,7 @@ public class AttackInRange : MonoBehaviour {
 			}
 		}
 
-		foreach (var p in RtsManager.Current.Players) {
+		foreach (var p in GameManager.Current.Players) {
 			if (p == player)
 				continue;
 

@@ -19,7 +19,7 @@ public class StrikeAi : AiBehavior {
 		int wave = (int)(ai.Drones.Count * SquadSize);
 		DronesRequired += IncreastPerWave;
 
-		foreach (var p in RtsManager.Current.Players) {
+		foreach (var p in GameManager.Current.Players) {
 			if (p.IsAi)
 				continue;
 

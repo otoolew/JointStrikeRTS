@@ -21,7 +21,8 @@ public class FindbuildingSite : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		var tempTarget = RtsManager.Current.ScreenPointToMapPosition (Input.mousePosition);
+        // TODO: Replace with EventSystem Pointer
+		var tempTarget = GameManager.Current.ScreenPointToMapPosition (Input.mousePosition);
 		if (tempTarget.HasValue == false)
 			return;
 
@@ -32,7 +33,7 @@ public class FindbuildingSite : MonoBehaviour {
 			return;
 		}
 
-		if (RtsManager.Current.IsGameObjectSafeToPlace (gameObject)) {
+		if (GameManager.Current.IsGameObjectSafeToPlace (gameObject)) {
 			rend.material.color = Green;
 			if (Input.GetMouseButtonDown (0)) {
 				var go = GameObject.Instantiate (BuildingPrefab);

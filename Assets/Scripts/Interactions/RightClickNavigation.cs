@@ -41,7 +41,7 @@ public class RightClickNavigation : Interaction {
 	// Update is called once per frame
 	void Update () {
 		if (selected && Input.GetMouseButtonDown (1)) {
-			var tempTarget = RtsManager.Current.ScreenPointToMapPosition(Input.mousePosition);
+			var tempTarget = GameManager.Current.ScreenPointToMapPosition(Input.mousePosition);
 			if (tempTarget.HasValue) {
 				target = tempTarget.Value;
 				SendToTarget();

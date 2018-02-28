@@ -8,7 +8,7 @@ public class CameraCradle : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		foreach (var p in RtsManager.Current.Players) {
+		foreach (var p in GameManager.Current.Players) {
 			if (p.IsAi)
 				continue;
 

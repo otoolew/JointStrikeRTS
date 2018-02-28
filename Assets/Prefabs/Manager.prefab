@@ -1,0 +1,242 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1065054155109520}
+  m_IsPrefabParent: 1
+--- !u!1 &1065054155109520
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4248610443414120}
+  - component: {fileID: 114594211233740622}
+  - component: {fileID: 114453549439914766}
+  - component: {fileID: 114098917492029434}
+  - component: {fileID: 114066276400342652}
+  - component: {fileID: 114466319738316200}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1936476391439788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4806810320593440}
+  - component: {fileID: 114479530910111424}
+  - component: {fileID: 114472141608708714}
+  - component: {fileID: 114905670603981382}
+  - component: {fileID: 114025513451175316}
+  - component: {fileID: 114202221750827996}
+  m_Layer: 0
+  m_Name: Player 2 Ai
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4248610443414120
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1065054155109520}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4806810320593440}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4806810320593440
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1936476391439788}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4248610443414120}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114025513451175316
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1936476391439788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9c31fc01876f094995f23fc3b68695a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WeightMultiplier: 1
+  TimePassed: 0
+  DronesPerBase: 5
+  Cost: 25
+--- !u!114 &114066276400342652
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1065054155109520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7743319648ed4b41a0ecd93b519531b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CashField: {fileID: 0}
+--- !u!114 &114098917492029434
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1065054155109520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bef27c9996c3a174494dd039ac0be626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimeBetweenChecks: 1
+  VisibleRange: 100
+--- !u!114 &114202221750827996
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1936476391439788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9db793559fa3be43a61af4eba471875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WeightMultiplier: 1.12
+  TimePassed: 0
+  DronesRequired: 10
+  TimeDelay: 5
+  SquadSize: 0.5
+  IncreastPerWave: 10
+--- !u!114 &114453549439914766
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1065054155109520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8602669424aaac7469c67b7e23c1df1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114466319738316200
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1065054155109520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c75c33ce0eb10a46aad8f84d55847f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Buttons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &114472141608708714
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1936476391439788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6939e0447f7c721408b658f0096218e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WeightMultiplier: 1
+  TimePassed: 0
+  ReturnWeight: 0.5
+--- !u!114 &114479530910111424
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1936476391439788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c213d9ae0f7c5a4f93a8a084cb8dbb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerName: Player 2
+  Confusion: 0
+  Frequency: 0
+--- !u!114 &114594211233740622
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1065054155109520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 826e32786f21a9a44a4db225b8f01172, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Players:
+  - Name: Player1
+    Location: {fileID: 0}
+    AccentColor: {r: 0, g: 0.54482746, b: 1, a: 0}
+    StartingUnits:
+    - {fileID: 1705682514934216, guid: 546dd3689ccaa0a49a804a54b13d99a8, type: 2}
+    IsAi: 0
+    Credits: 1000
+  - Name: Player 2
+    Location: {fileID: 0}
+    AccentColor: {r: 1, g: 0, b: 0, a: 0}
+    StartingUnits:
+    - {fileID: 1705682514934216, guid: 546dd3689ccaa0a49a804a54b13d99a8, type: 2}
+    IsAi: 1
+    Credits: 1000
+  MapCollider: {fileID: 0}
+--- !u!114 &114905670603981382
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1936476391439788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62e8078ac016a60488e57817fbe125d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WeightMultiplier: 1
+  TimePassed: 1
+  Cost: 200
+  UnitsPerBase: 5
+  RangeFromDrone: 30
+  TriesPerDrone: 3
+  BasePrefab: {fileID: 1862469606409922, guid: e54b31aa889abca4bb9d0ed9472c7b09, type: 2}
